@@ -7,14 +7,19 @@
   }
   body{
     font-family: montserrat;
+    background-color: #fff;
   }
   .navbar {
+    background-color: #f8f9fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
   }
 
   .contact-info {
@@ -47,7 +52,10 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    /* border-radius: 4px; */
+    border-radius: 1px;
+  }
+  .button:hover {
+    background-color: #ec8585;
   }
   .nav_right{
     display: flex;
@@ -57,7 +65,7 @@
   hr {
     margin: 0;
     border: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #110c0c;
   }
   @media (min-width: 768px) {
     .contact-info, .social-icons {
@@ -69,12 +77,17 @@
     }
   }
   nav{
-    /* background: #0082e6; */
+     background: #f8f9fa; 
     display: flex;
     align-items: center;
     height: 80px;
     width: 100%;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    z-index: 1000;
+    
   }
   .logo{
       display: flex;
@@ -181,3 +194,181 @@
     background-size: cover;
     height: calc(100vh - 80px);
   }
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('./images/lawyer.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    color: #fff;
+    margin-top: 10rem;
+  }
+  .underline-heading {
+    font-size: 15px;
+    color: #fff; 
+    border-bottom: 3px solid #ad1717; 
+    padding-bottom: 3px;
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+  .hero-text {
+    max-width: 600px;
+  }
+
+  .hero-buttons {
+    margin-top: 20px;
+  }
+
+ .button1 {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ad1717;
+    border: none;
+     border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button2{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff; 
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .hero-buttons button:hover {
+    background-color: #ec8585;
+  }
+
+  .sect1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.card1 {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.card1 i {
+    font-size: 30px;
+    color: #2f2f30;
+}
+
+.card1 p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #2f2f30;
+}
+.card1 h3{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #110c0c;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }}
+  /* .sect2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card2 {
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+} */
+.card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card2 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card2-content {
+  flex: 1;
+}
+
+.card2 > img {
+  max-height: 100%;
+  border-radius: 8px;
+  /* margin-left: 20px; */
+  width: 40%;
+  object-fit: cover;
+  border-right: 1px solid #ddd;
+}
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
